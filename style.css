@@ -1,0 +1,247 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+*:focus {
+    outline-color: rgb(239, 46, 136);
+    outline-offset: 2px;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width: 512px;
+    }
+
+    .body-container {
+        padding: 32px;
+        margin: 32px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        margin: 16px;
+        text-align: center;
+    }
+
+    .input-container {
+        gap: 8px;
+        padding-bottom: 16px;
+        width: 50%;
+        margin: auto;
+    }
+
+    input.submit {
+        border-radius: 8px;
+    }
+
+    .error {
+        padding: 8px;
+        border-radius: 8px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .result {
+        padding: 8px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .input {
+        width: 184px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .body-container {
+        padding: min(6vw, 48px);
+        margin: min(8vw, 64px);
+        border-radius: 16px;
+    }
+
+    h1 {
+        margin: 0 0 16px 0;
+        text-align: center;
+    }
+
+    .input-container {
+        gap: 12px;
+        padding-bottom: 16px;
+        width: max(228px, 40%);
+        margin: auto;
+    }
+
+    .input-sub-container {
+        margin: auto;
+    }
+
+    input.submit {
+        width: 60%;
+        margin: auto;
+        border-radius: 8px;
+    }
+
+    .error {
+        padding: 8px;
+        border-radius: 8px;
+        width: 32%;
+        margin: auto;
+    }
+
+    .result {
+        padding: 8px;
+        width: 32%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+
+    .body-container {
+        padding: min(4vw, 20px);
+        margin: 4vw;
+        border-radius: 8px;
+    }
+
+    h1 {
+        margin: 0 0 12px 0;
+        text-align: center;
+    }
+
+    .input-container {
+        gap: 12px;
+        padding-bottom: 16px;
+        width: 160px;
+        margin: auto;
+    }
+
+    .input-sub-container {
+        margin: auto;
+    }
+
+    input.submit {
+        margin: auto;
+        border-radius: 8px;
+    }
+
+    .error {
+        padding: 8px;
+        border-radius: 8px;
+        width: 160px;
+        margin: auto;
+    }
+
+    .result {
+        padding: 8px;
+        width: 160px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    body {
+        background-color: green;
+        width: 100%;
+        min-width: 330px;
+    }
+
+    .body-container {
+        padding: max(16px, 4vw);
+        margin: auto;
+        border-radius: 0;
+    }
+
+    h1 {
+        margin: 0 0 8px 0;
+        text-align: center;
+    }
+
+    .input-container {
+        gap: 10px;
+        padding-bottom: 16px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .input-sub-container {
+        margin: auto;
+    }
+
+    input.submit {
+        border-radius: 8px;
+        width: 40%;
+        margin: auto;
+    }
+
+    .error {
+        padding: 8px;
+        border-radius: 8px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .result {
+        padding: 8px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    margin: auto;
+}
+
+label {
+    font-size: medium;
+}
+
+input {
+    font-size: medium;
+}
+
+input.submit {
+    font-size: large;
+    background-color: rgb(225, 225, 225);
+}
+
+input.submit:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background-color: rgb(205, 205, 205);
+}
+
+input.submit:active {
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+}
+
+.body-container {
+    background-color: rgb(119, 225, 229);
+    box-shadow: 4px 4px rgba(157, 157, 157, 0.25);
+}
+
+.error {
+    background-color: rgb(245, 245, 245);
+    color: rgb(214, 0, 0);
+    visibility: hidden;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.result {
+    background-color: rgb(245, 245, 245);
+    font-size: large;
+    visibility: hidden;
+}

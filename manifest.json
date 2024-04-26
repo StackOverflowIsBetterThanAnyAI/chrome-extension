@@ -1,0 +1,17 @@
+{
+    "name": "Random Number",
+    "version": "1.0.0",
+    "description": "This tool generates a random number between a specified min and max value.",
+    "manifest_version": 3,
+    "author": "Michael Münzenhofer",
+    "icons": {
+        "128": "favicon.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Random Number",
+        "default_icon": {
+            "128": "favicon.png"
+        }
+    }
+}

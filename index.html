@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Random Number</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="body-container">
+            <h1>Random Number</h1>
+            <div class="input-container">
+                <div class="input-sub-container">
+                    <label for="minInput">Min.:</label>
+                    <input
+                        class="input"
+                        id="minInput"
+                        type="number"
+                        min="0"
+                        placeholder="0"
+                        max="999999999999999"
+                        min="-999999999999999"
+                    />
+                </div>
+                <div class="input-sub-container">
+                    <label for="maxInput">Max.:</label>
+                    <input
+                        class="input"
+                        id="maxInput"
+                        type="number"
+                        placeholder="100"
+                        max="999999999999999"
+                        min="-999999999999999"
+                    />
+                </div>
+                <input
+                    id="generateButton"
+                    class="submit"
+                    type="submit"
+                    value="Generate"
+                />
+            </div>
+            <div class="error" id="error">
+                &#128712; Please enter a valid number for Min. and Max.
+            </div>
+            <div class="result" id="result">
+                Result: <span id="resultEquals"></span>
+            </div>
+        </div>
+    </body>
+</html>
