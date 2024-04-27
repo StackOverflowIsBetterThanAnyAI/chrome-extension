@@ -88,7 +88,7 @@
     .error {
         padding: 8px;
         border-radius: 8px;
-        width: 32%;
+        width: 44%;
         margin: auto;
     }
 
@@ -134,7 +134,7 @@
     .error {
         padding: 8px;
         border-radius: 8px;
-        width: 160px;
+        width: 80%;
         margin: auto;
     }
 
@@ -149,7 +149,7 @@
     body {
         background-color: green;
         width: 100%;
-        min-width: 330px;
+        min-width: 360px;
     }
 
     .body-container {
@@ -159,12 +159,12 @@
     }
 
     h1 {
-        margin: 0 0 8px 0;
+        margin: 0 0 12px 0;
         text-align: center;
     }
 
     .input-container {
-        gap: 10px;
+        gap: 12px;
         padding-bottom: 16px;
         width: 100%;
         margin: auto;
@@ -223,6 +223,12 @@ input.submit:active {
     background-color: rgb(185, 185, 185);
 }
 
+input.submit:disabled {
+    cursor: not-allowed;
+    scale: 1;
+    background-color: rgb(175, 175, 175);
+}
+
 .body-container {
     background-color: rgb(119, 225, 229);
     box-shadow: 4px 4px rgba(157, 157, 157, 0.25);
@@ -231,7 +237,6 @@ input.submit:active {
 .error {
     background-color: rgb(245, 245, 245);
     color: rgb(214, 0, 0);
-    visibility: hidden;
 }
 
 .input-container {
@@ -240,8 +245,27 @@ input.submit:active {
     flex-direction: column;
 }
 
+.input {
+    padding-left: 4px;
+}
+
+.input:disabled {
+    cursor: not-allowed;
+    background-color: rgb(230, 230, 230);
+}
+
 .result {
     background-color: rgb(245, 245, 245);
     font-size: large;
+}
+
+.loader {
+    font-size: xx-large;
+    line-height: 0px;
     visibility: hidden;
+}
+
+.loaderContainer {
+    text-align: center;
+    padding-bottom: 12px;
 }

@@ -42,11 +42,17 @@
                     value="Generate"
                 />
             </div>
-            <div class="error" id="error">
+            <div class="loaderContainer" id="loaderContainer" hidden>
+                <span class="loader" id="point1">.</span>
+                <span class="loader" id="point2">.</span>
+                <span class="loader" id="point3">.</span>
+            </div>
+            <div class="error" id="error" hidden>
                 &#128712; Please enter a valid number for Min. and Max.
             </div>
-            <div class="result" id="result">
-                Result: <span id="resultEquals"></span>
+            <div class="result" id="result" hidden>
+                Result:
+                <span id="resultEquals"></span>
             </div>
         </div>
     </body>
