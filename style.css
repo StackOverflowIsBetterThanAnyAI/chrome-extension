@@ -1,10 +1,11 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-*:focus {
+*:focus-visible {
     outline-color: rgb(239, 46, 136);
     outline-offset: 2px;
+    border: none;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -213,7 +214,6 @@ input.submit {
 }
 
 input.submit:hover {
-    scale: 1.025;
     cursor: pointer;
     background-color: rgb(205, 205, 205);
 }
@@ -225,7 +225,6 @@ input.submit:active {
 
 input.submit:disabled {
     cursor: not-allowed;
-    scale: 1;
     background-color: rgb(175, 175, 175);
 }
 
