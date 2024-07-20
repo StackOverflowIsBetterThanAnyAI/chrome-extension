@@ -1,11 +1,10 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    border: none;
 }
 
 *:focus-visible {
-    outline-color: rgb(239, 46, 136);
-    outline-offset: 2px;
-    border: none;
+    outline: rgb(242, 178, 15) solid 2px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -148,7 +147,6 @@
 
 @media only screen and (max-width: 384px) {
     body {
-        background-color: green;
         width: 100%;
         min-width: 360px;
     }
@@ -164,6 +162,10 @@
         text-align: center;
     }
 
+    .input {
+        width: 128px;
+    }
+
     .input-container {
         gap: 12px;
         padding-bottom: 16px;
@@ -177,8 +179,9 @@
 
     input.submit {
         border-radius: 8px;
-        width: 40%;
-        margin: auto;
+        padding: 4px 0;
+        width: 60%;
+        margin: 8px auto;
     }
 
     .error {
@@ -196,12 +199,13 @@
 }
 
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(231, 240, 220);
     margin: auto;
 }
 
 label {
     font-size: medium;
+    color: rgb(237, 244, 233);
 }
 
 input {
@@ -210,51 +214,52 @@ input {
 
 input.submit {
     font-size: large;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(84, 88, 82);
+    color: rgb(237, 244, 233);
 }
 
 input.submit:hover {
     cursor: pointer;
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(95, 107, 91);
 }
 
 input.submit:active {
     cursor: pointer;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(110, 127, 104);
 }
 
 input.submit:disabled {
     cursor: not-allowed;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(151, 157, 145);
 }
 
 .body-container {
-    background-color: rgb(119, 225, 229);
+    background-color: rgb(89, 116, 69);
     box-shadow: 4px 4px rgba(157, 157, 157, 0.25);
 }
 
 .error {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(231, 240, 220);
     color: rgb(214, 0, 0);
 }
 
 .input-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
 .input {
     padding-left: 4px;
+    background-color: rgb(231, 240, 220);
 }
 
 .input:disabled {
     cursor: not-allowed;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(231, 240, 220);
 }
 
 .result {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(231, 240, 220);
     font-size: large;
 }
 

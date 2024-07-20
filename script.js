@@ -78,7 +78,7 @@ const generateNumber = () => {
         maxElement.removeAttribute('disabled')
         minElement.removeAttribute('disabled')
         resultElement.style.cursor = 'default'
-        resultElement.style.backgroundColor = '#f5f5f5'
+        resultElement.style.backgroundColor = '#e7f0dc'
         resultElement.style.opacity = '1'
         resultElement.style.border = 'none'
     }
